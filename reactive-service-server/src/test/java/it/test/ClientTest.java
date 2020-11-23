@@ -37,6 +37,7 @@ public class ClientTest extends AbstractItTest {
                 .returnResult()
                 .getResponseBody();
 
+        // then
         assertThat(response.id()).isNotNull();
         assertThat(response.name()).isEqualTo(updateResource.name());
         assertThat(response.address()).isEqualTo(updateResource.address());
